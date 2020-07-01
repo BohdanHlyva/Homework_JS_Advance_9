@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="ourForm">
+            <form name="form">
+                <label for="login">Login</label>
+                <input type="text" id="login" placeholder="Enter login" oninput="validFirst()">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" oninput="validSecond()">
+                <label for="email">Email address</label>
+                <input type="text" id="email" placeholder="Enter email" oninput="validThird()">
+                <input type="button" id="button" class="addB" value="Add user" onclick="test()">
+                <input type="button" id="button" class="editB" value="Edit user" onclick="saveEditUser()">
+
+            </form>
+        </div>
+        <div class="table">
+            <table>
+                <tr class="head">
+                    <th>#</th>
+                    <th>Login</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
